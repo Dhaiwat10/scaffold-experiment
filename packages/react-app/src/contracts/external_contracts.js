@@ -798,4 +798,12 @@ module.exports = {
       },
     },
   },
+  137: {
+    contracts: {
+      DHAI: {
+        address: "0xf04eee2fa7dd65913927377c38579f20ed05b2be",
+        abi: ERC20ABI,
+      },
+    },
+  },
 };

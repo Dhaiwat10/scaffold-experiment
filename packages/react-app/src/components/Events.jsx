@@ -1,5 +1,6 @@
 import { List } from "antd";
 import { useEventListener } from "eth-hooks/events/useEventListener";
+import { useEffect } from "react";
 import Address from "./Address";
 
 /**
@@ -22,6 +23,10 @@ import Address from "./Address";
 export default function Events({ contracts, contractName, eventName, localProvider, mainnetProvider, startBlock }) {
   // 📟 Listen for broadcast events
   const events = useEventListener(contracts, contractName, eventName, localProvider, startBlock);
+
+  useEffect(() => {
+    console.log({ events });
+  }, [events]);
 
   return (
     <div style={{ width: 600, margin: "auto", marginTop: 32, paddingBottom: 32 }}>

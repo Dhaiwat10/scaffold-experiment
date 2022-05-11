@@ -71,7 +71,7 @@ export const NETWORKS = {
     color: "#2bbdf7",
     chainId: 137,
     price: 1,
-    gasPrice: 1000000000,
+    gasPrice: 350000000000,
     rpcUrl: "https://polygon-rpc.com/",
     blockExplorer: "https://polygonscan.com/",
   },
